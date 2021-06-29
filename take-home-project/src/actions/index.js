@@ -1,3 +1,5 @@
+// Actions are dispatched messages that pass through reducers
+
 import axios from 'axios';
 export const FETCH_SERVICES_START = "FETCH_SERVICES_START";
 export const FETCH_SERVICES_SUCCESS = "FETCH_SERVICES_SUCCESS";
