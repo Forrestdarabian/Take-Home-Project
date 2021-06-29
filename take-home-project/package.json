@@ -8,5 +8,11 @@
   },
   "keywords": [],
   "author": "Forrest Darabian",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "react-redux": "^7.2.4",
+    "redux": "^4.1.0",
+    "redux-thunk": "^2.3.0"
+  }
 }
