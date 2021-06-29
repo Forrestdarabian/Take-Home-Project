@@ -6,5 +6,6 @@ const FETCH_SERVICES_FAILURE = "FETCH_SERVICES_FAILURE";
 const getServices = () => dispatch => {
     dispatch({ type: FETCH_SERVICES_START });
     axios.get("https://johnny-appleseed.clientsecure.me/client-portal-api/cpt-codes?filter[clinicianId]=2")
-    .then(res => res.data);
-}
+    .then(res => dispatch({ type: FETCH_SERVICES_SUCCESS, payload: res.data}))
+    .catch(error => dispatch({ type: FETCH_SERVICES_FAILURE, payload: error.response }));
+};
