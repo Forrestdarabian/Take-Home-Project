@@ -11,7 +11,7 @@ function App(props) {
       {props.services && (<div>
         <p>{props.services.id}</p>
       </div>)}
-      {/* {props.error !== "" && <p>{error}</p>} */}
+      {props.error !== "" && <p>{props.error}</p>}
       <button onClick={props.getServices}>View all Services</button>
     </div>
   );
