@@ -10,8 +10,7 @@ import reducer from './reducers';
 //Importing thunk to create middleware
 import thunk from 'redux-thunk';
 
-const store = createStore(reducer, applyMiddleware(thunk));
-
+const store = createStore(reducer, applyMiddleware(thunk))
 ReactDOM.render(
   //Store is a prop in our provider so it can be distributed
   <Provider store={store}>
