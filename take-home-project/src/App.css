@@ -18,6 +18,12 @@ h2 {
   color: #fcaf58;
 }
 
+@media (max-width: 750px) {
+  img {
+    max-width: 50%;
+  }
+}
+
 h4 {
   color: #ff8c42;
 }
