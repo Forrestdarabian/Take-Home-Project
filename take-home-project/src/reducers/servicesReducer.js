@@ -9,7 +9,7 @@ const initialState = {
     loading: false
 };
 //Declaring reducer function which takes in state and uses a default argument
-const reducer = (state = initialState, action) => {
+const servicesReducer = (state = initialState, action) => {
     console.log('action', action);
     switch(action.type) {
         case FETCH_SERVICES_START:
@@ -38,4 +38,4 @@ const reducer = (state = initialState, action) => {
     }
 };
 
-export default reducer;
+export default servicesReducer;
