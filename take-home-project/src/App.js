@@ -1,6 +1,7 @@
 import React from "react"
 import Services from './components/Services'
 import Locations from './components/Locations'
+import "./App.css"
 
 const serviceRoutes = () => {
   if (window.location.pathname === "/") {
